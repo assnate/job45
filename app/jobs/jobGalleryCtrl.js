@@ -1,5 +1,5 @@
 
-app.controller("jobGalleryCtrl", function($scope, recipes, user, $location) {
+app.controller("jobGalleryCtrl", function($scope, jobs, user, $location) {
 
     // Checking if the user is currently logged in,
     // if not redirecting to the home page

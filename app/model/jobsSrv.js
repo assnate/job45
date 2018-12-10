@@ -1,15 +1,15 @@
 
-app.factory("Jobs", function($q, $http, user) {
+app.factory("jobs", function($q, $http, user) {
 
-    var Job = {};
+    var jobs = {};
     var wasEverLoaded = {};
 
-    function Job(Job) {
+    function Job(job) {
         this.id = job.id;
         this.name = job.name;
         this.description = job.description;
         this.ingredients = job.ingredients;
-        this.steps = jobe.steps;
+        this.steps = job.steps;
         this.imgUrl = job.imgUrl;
         this.userId = job.userId;
     }
@@ -24,10 +24,10 @@ app.factory("Jobs", function($q, $http, user) {
         if (wasEverLoaded[userId]) {
             async.resolve(jobs[userId]);
         } else {
-            Jobs[userId] = [];
-            var getjobURL = "http://my-json-server.typicode.com/assnate/Job45-book-v3/jobs?userId=" + userId;
+            jobs[userId] = [];
+            var getjobURL = "http://my-json-server.typicode.com/assnate/Job45/recipes?userId=" + userId;
             
-            $http.get(getRecipesURL).then(function(response) {
+            $http.get(getjobURL).then(function(response) {
                 for (var i = 0; i < response.data.length; i++) {
                     var job= new Job(response.data[i]);
                     jobs[userId].push(job);
@@ -64,6 +64,6 @@ app.factory("Jobs", function($q, $http, user) {
 
     return {
         getActiveUserRecipes: getActiveUserJobs,
-        createJobs: createJobs
+        createJob: createJob
     }
 })

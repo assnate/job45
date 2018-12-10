@@ -15,26 +15,30 @@
             "pwd": "678"
         }
     ],
-    "recipes": [
+    "jobs": [
         {
             "id": 1,
-            "name": "Shakshuka",
-            "description": "Amazing egg dish with tomatto souce",
-            "ingredients": "Egg, Tomatto, Onion",
-            "steps": "Pout eggs and then tomatto",
-            "imgUrl": "http://media.foodnetwork.ca/recipetracker/56239255-96d6-4670-8a73-040baaf51f41_Shakshouka_WebReady.jpg",
+            "name": "מנהלת שיווק",
+            "description": "מנהלת שיווק בהייטק",
+            "experience": "דרוש/ה מנהל/ת שיווק ומכירות לשיווק ומכירות של מוצרי החטיבה העסקית יזום ואיתור הזדמנויות בשווקים בינלאומיים ניהול הזדמנויות וקמפיינים ",
+            "location":" חיפה ",
+            "sallery":12000,
+            "imgUrl": "https://www.stockvault.net/data/2018/11/16/256702/thumb16.jpg",
             "userId": 1
         },
         {
             "id": 2,
-            "name": "Shakshuka",
-            "description": "Amazing egg dish with tomatto souce",
-            "ingredients": "Egg, Tomatto, Onion",
-            "steps": "Pout eggs and then tomatto",
-            "imgUrl": "https://www.serenaonline.co.za/wp-content/uploads/2017/12/Shakshouka-Poached-Eggs-in-a-Spicy-Tomato-Sauce-Smaller-File.jpg",
-            "userId": 1
-        },
-        {
+            "name":" מתכנת",
+            "description": "מתכנת/ת NET. בשפת #C ",
+            "experience": " עבודה בצוות אינטגרציה ,מול גורמי תשתיות, צוותים טכנולוגיים ומנהלי מערכות ",
+            "location":" תל אביב ",
+            "sallery":20000,
+            "imgUrl": "https://www.stockvault.net/data/2014/10/07/163194/preview16.jpg",
+            "userId": 2
+
+            },
+          
+            {
             "id": 3,
             "name": "Shakshuka",
             "description": "Amazing egg dish with tomatto souce",
