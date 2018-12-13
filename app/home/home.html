@@ -1,14 +1,14 @@
-<navbar-job></navbar-job>
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h1 class="display-4">Job45</h1>
-        <p class="lead">Find Job45 and JobWemon</p>
-    </div>
-</div>
 
-
+<form class="my-3">
+        <div class="form-group">
+          <input type="text"  class="form-control" placeholder="Filter Jobs by Name & Model" ng-change="searchByName()" ng-model="searchText">
+        </div>
+        <!--<div class="form-group">-->
+        <!--  <input type="text" class="form-control" placeholder="Filter Jobs by Model" ng-model="searchText.model">-->
+        <!--</div>-->
+      </form>
 <div class="row">
-    <div class="col-sm-6 col-md-4 my-2" ng-repeat="job in jobs">
+    <div class="col-sm-6 col-md-4 my-2" ng-repeat="job in filteredJobs">
         <div class="card recipe">
             <img class="card-img-top" ng-src="{{job.imgUrl}}" alt="">
             <div class="card-body">
