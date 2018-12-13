@@ -2,6 +2,7 @@
 app.factory("jobs", function($q, $http, user) {
 
     var jobs = {};
+    var allJobs = [];
     var wasEverLoaded = {};
 
     function Job(job) {
@@ -25,7 +26,7 @@ app.factory("jobs", function($q, $http, user) {
             async.resolve(jobs[userId]);
         } else {
             jobs[userId] = [];
-            var getjobURL = "http://my-json-server.typicode.com/assnate/Job45/recipes?userId=" + userId;
+            var getjobURL = "http://my-json-server.typicode.com/assnate/Job45/jobs?userId=" + userId;
             
             $http.get(getjobURL).then(function(response) {
                 for (var i = 0; i < response.data.length; i++) {
@@ -41,7 +42,25 @@ app.factory("jobs", function($q, $http, user) {
 
         return async.promise;
     }
+    function getAllJobs() {
+        var async = $q.defer();
+        allJobs=[];
+            var getjobURL = "http://my-json-server.typicode.com/assnate/Job45/jobs";
+            
+            $http.get(getjobURL).then(function(response) {
+                for (var i = 0; i < response.data.length; i++) {
+                    var job= new Job(response.data[i]);
+                    allJobs.push(job);
+                }
+                
+                async.resolve(allJobs);
+            }, function(error) {
+                async.reject(error);
+            });
+        
 
+        return async.promise;
+    }
 
     function createJob(name, description, ingredients, steps, imgUrl) {
         var async = $q.defer();
@@ -63,7 +82,8 @@ app.factory("jobs", function($q, $http, user) {
 
 
     return {
-        getActiveUserRecipes: getActiveUserJobs,
-        createJob: createJob
+        getActiveUserJobs: getActiveUserJobs,
+        createJob: createJob,
+        getAllJobs:getAllJobs
     }
 })

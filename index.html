@@ -21,10 +21,28 @@
     <script src="app/model/userSrv.js"></script>
     <script src="app/jobs/jobGalleryCtrl.js"></script>
     <script src="app/model/jobsSrv.js"></script>
-    <script src="app/jobs/newJobCtrl.js"></script>
+    <script src="app/model/jobsSrv.js"></script>
+    <script src="app/home/homeCtrl.js"></script>
     <title>Job45</title>
+    <form class="my-3">
+        <!-- <div class="form-group">
+          <input type="text" class="form-control" placeholder="Filter Cars by Brand & Model" ng-model="searchText">
+        </div> -->
+        <!--<div class="form-group">-->
+        <!--  <input type="text" class="form-control" placeholder="Filter Cars by Model" ng-model="searchText.model">-->
+        <!--</div>-->
+      </form>
 </head>
 <body>
+    <navbar-job></navbar-job>
+    <!-- <form class="my-3">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Filter Cars by Brand & Model" ng-model="searchText">
+    </div> -->
+    <!--<div class="form-group">-->
+    <!--  <input type="text" class="form-control" placeholder="Filter Cars by Model" ng-model="searchText.model">-->
+    <!--</div>-->
+
 
     <ng-view></ng-view>
 </body>

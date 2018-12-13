@@ -8,7 +8,8 @@ app.controller("jobGalleryCtrl", function($scope, jobs, user, $location) {
         return;
     }
 
-    jobs.getActiveUserRecipes().then(function (jobs) {
+    jobs.getActiveUserJobs().then(function (jobs) {
+        debugger;
         $scope.jobs = jobs;
     }, function(error) {
         

@@ -1,7 +1,11 @@
-<navbar-job></navbar-job>
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h1 class="display-4">Job45</h1>
-        <p class="lead">Find Job45 and JobWemon</p>
+<div class="row">
+    <div class="col-sm-6 col-md-4 my-2" ng-repeat="job in jobs">
+        <div class="card recipe">
+            <img class="card-img-top" ng-src="{{job.imgUrl}}" alt="">
+            <div class="card-body">
+                <h4 class="card-title">{{job.name}}</h4>
+                <p class="card-text">{{job.description}}</p>
+            </div>
+        </div>
     </div>
 </div>
