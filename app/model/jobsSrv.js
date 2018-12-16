@@ -43,6 +43,7 @@ app.factory("jobs", function($q, $http, user) {
         return async.promise;
     }
     function getAllJobs() {
+        debugger;
         var async = $q.defer();
         allJobs=[];
             var getjobURL = "http://my-json-server.typicode.com/assnate/Job45/jobs";

@@ -60,11 +60,12 @@
 
         {
             "id": 5,
-            "name": "Shakshuka",
-            "description": "Amazing egg dish with tomatto souce",
-            "ingredients": "Egg, Tomatto, Onion",
-            "steps": "Pout eggs and then tomatto",
-            "imgUrl": "http://www.spicechronicles.com/wp-content/uploads/2015/09/Shakshouka_1_650.jpg",
+            "name": "מנכלית",
+            "description": "ניסיון בהקמה וניהול חברה בתחום הסייבר",
+            "experience": "5 שנים ניסיון בהקמת חברה",
+            "location": "ירושליים",
+            "sallery":30000,
+            "imgUrl": "https://www.reka.in/wallpapers-4194",
             "userId": 1
         }        
     ]
