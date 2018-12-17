@@ -50,11 +50,12 @@
 
            {
             "id": 4,
-            "name": "Shakshuka",
-            "description": "Amazing egg dish with tomatto souce",
-            "ingredients": "Egg, Tomatto, Onion",
-            "steps": "Pout eggs and then tomatto",
-            "imgUrl": "https://cdn.katalogsmakow.pl/2015/10/06/0x600/najlepsze-sniadanie-szakszuka-shakshouka-jajka-w-pomidorach.359892.jpg",
+            "name": "תיכנות פיתוח אפליקציות",
+            "description": "ניסיון  JS HTMLCSS ANGULAR",
+            "experience": "גוניור עד שנתיים ניסיון",
+            "": "חיפה",
+            "sallery":15000,
+            "imgUrl": "http://www.momentum4u.org/wp-content/uploads/2016/06/teens-629046_960_720.jpg",
             "userId": 2
         },
 
@@ -65,7 +66,7 @@
             "experience": "5 שנים ניסיון בהקמת חברה",
             "location": "ירושליים",
             "sallery":30000,
-            "imgUrl": "http://f.nanafiles.co.il/upload/Xternal/IsraBlog/59/30/73/733059/posts/22045173.jpg",
+            "imgUrl": "http://www.yo-yoo.co.il/coolpics/images/uploads/cf44ed.jpg",
             "userId": 1
         }        
     ]
