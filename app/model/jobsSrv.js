@@ -26,7 +26,7 @@ app.factory("jobs", function($q, $http, user) {
             async.resolve(jobs[userId]);
         } else {
             jobs[userId] = [];
-            var getjobURL = "http://my-json-server.typicode.com/assnate/Job45/jobs?userId=" + userId;
+            var getjobURL = "https://my-json-server.typicode.com/assnate/Job45/jobs?userId=" + userId;
             
             $http.get(getjobURL).then(function(response) {
                 for (var i = 0; i < response.data.length; i++) {
@@ -46,7 +46,7 @@ app.factory("jobs", function($q, $http, user) {
         debugger;
         var async = $q.defer();
         allJobs=[];
-            var getjobURL = "http://my-json-server.typicode.com/assnate/Job45/jobs";
+            var getjobURL = "https://my-json-server.typicode.com/assnate/Job45/jobs";
             
             $http.get(getjobURL).then(function(response) {
                 for (var i = 0; i < response.data.length; i++) {
